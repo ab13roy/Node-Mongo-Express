@@ -1,0 +1,134 @@
+<% include ./partials/header %>
+
+<body>
+    
+    <div class="container-fluid">
+        
+        <div class="row">
+            
+            <div  class="col-md-3 aside" >
+                
+                <div class="sidebar-image">
+                    <img id="headphoto" src="https://i.stack.imgur.com/l60Hf.png">
+                </div>
+                
+                <div class="sidebar-name">
+                    <strong> <%= show %> </strong>
+                </div>
+                
+                
+                <ul class="sidenav">
+                    <a href="profile#Profile">Profile</a>
+                    <a href="profile#Music">Music</a>
+                    <a href="profile#Campaigns">Campaigns</a>
+                    <a href="profile#Data">Data</a>
+                </ul>
+                
+            </div>
+            
+            <div class="col-md-6 main">
+                
+                <div class="container" id="Profile" class="tabcontent">
+                    
+                    <h1>Profile</h1>
+                    
+                    <div id="profile-account">
+                        <div class="profile-user-edit">
+                            <h3>Welcome : <%= show %></h3>
+                        </div>
+                    
+                        <button style="float:right">Edit Profile</button>
+                        <a href="logout"><button style="float:right">Logout</button></a>
+                    </div>
+                        
+                    
+                    <p>COMPANYTAG.</p>
+                    <span>Genre: <em><strong>pop</strong></em></span>
+                    <div id="socials">
+                        <i class="fab fa-facebook fa-3x"></i>
+                        <i class="fab fa-twitter-square fa-3x"></i>
+                        <i class="fab fa-instagram fa-3x"></i>
+                        <i class="fab fa-youtube fa-3x"></i>
+                        <i class="fab fa-soundcloud fa-3x"></i>
+                        <i class="fab fa-spotify fa-3x"></i>
+                        <i class="fab fa-itunes fa-3x"></i>
+                    </div>
+                    <p>Want to be more noticeable? Register for these platforms!</p>
+                    
+                    <div class="container bio">
+                        <h3>Bio:</h3>
+                        <p> The quick, brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim. Sex-charged fop blew my junk TV quiz. How quickly daft jumping zebras vex.</p>
+                    </div>
+                    
+                    <h3>Your Growth</h3>
+                    <p>Fans: <strong>123</strong> </p>
+                    <img src="http://www.falconprogrammer.com/wp-content/uploads/2013/12/LineGraph-400x280.png" style="width:100%">
+                </div>
+                
+                <div id="Campaigns" class="tabcontent">
+                    
+                    <h3>Campaigns</h3>
+                    <span>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%
+                        </div>
+                    </div>
+                    </span>
+                    <span>Find Out Your Campaign Objectives Here</span>
+                    
+                    <div>
+                        <span>
+                            <del><strong>Objective 1: </strong> ASJNDASKJNASJNDKJASNDKJASNDKJASN</del><br>
+                            <del><strong>Objective 2: </strong> ASJNDASKJNASJNDKJASNDKJASNDKJASN</del><br>
+                            <strong>Objective 3: </strong> ASJNDASKJNASJNDKJASNDKJASNDKJASN<br>
+                            <strong>Objective 4: </strong> ASJNDASKJNASJNDKJASNDKJASNDKJASN<br>  
+                        </span>
+                    </div>
+                    <button type="button" class="btn btn-primary">Update Campaigns Status</button>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="col-md-3">
+                
+                <div class="tabcontent" id="Music">
+                    <h3>Music</h3>
+                    
+                    <ul class="music_gallery">
+                      <li class="container" >
+                        <div class="row">
+                            <div class="desc col-md-12">
+                                  <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/439450881&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="desc col-md-12">
+                                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/400204290&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="desc col-md-12">
+                                  <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/298892645&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="desc col-md-12">
+                                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/298892648&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                            </div>
+                        </div>
+                      </li>
+                    </ul>
+                    
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </div>
+
+</body>
+
+
+<% include ./partials/footer %>
